@@ -1,69 +1,60 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - html</title>
+  <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <style>
+  #active {
+    color:red;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr
+  }
+  #article {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .saw {
+    color:gray;
+  }
+  body {
+    margin: 0;
+  }
+  a {
+    text-decoration:none;
+    color: black;
+  }
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    border-bottom: 1px gray solid;
+    padding: 20px;
+    margin: 0;
+  }
+  ol {
+    border-right: 1px gray solid;
+    margin: 0;
+    width: 100px;
+    padding-top: 20px;
+  }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html"">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-</ol>
-<h3>HTML이란 무엇인가</h3>
-<p><a href="https://dev.w3.org/html5/spec-LC/" target="_blank" title="HTML5 specification">Hypertext Markup Lamguage</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-  Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.
-  HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-<img src="coding.jpg" width='100%'></p>
-<p style="margin-top:45px;">HTML elements are the building blocks of HTML pages.
-  With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.
-  It provides a means to create structured documents by donating structural semantics for text such as headings, paragraghs, lists, limks, quotes and other items.
-  HTML elements are delineated by tags, written using angle buckets.<p>
-<p style="margin-top:45px;"><h3>동영상 삽입</h3>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-<p style="margin-top:45px"><h3>댓글기능 추가</h3>
-  <li><a href="https://disqus.com">disqus.com</a></li>
-  <li><a href="https://livere.com">livere.com</a></li>
-</p>
-<p style="margin-top:45px;">
-<h3>상담채팅 추가</h3>
-<li>https://www.tawk.to/</li>
-<p/>
-<p style="margin-top:45px;">
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web1-b86vkixmqe.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/617dfd6ef7c0440a5920c0b7/1fja2bucf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw" id="active">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h3>HTML이란 무엇인가</h3>
+      <p><a href="https://dev.w3.org/html5/spec-LC/" target="_blank" title="HTML5 specification">Hypertext Markup Lamguage</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+        Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.
+        HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+      <img src="coding.jpg" width='100%'>
+    </div>
+  </div>
 </body>
 </html>
